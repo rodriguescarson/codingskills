@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    dangerouslyAllowSVG: true,
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'placehold.co',
+            port: '',
+            pathname: '/**',
+          },
+        ],
+  },
+  // next.config.js
+   
+}
 
 module.exports = nextConfig
